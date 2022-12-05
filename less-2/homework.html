@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2</title>
+</head>
+<body>
+    <!--  форма кандидата на роботу  
+        1. Ваше імя
+        2. ваше прізвище
+        3. рік нароження
+        4. електронна пошта
+         5. розкажи щось про себе
+        6. оберіть в якому форматі ви хочете працювати 
+        7. завантажте ваше фото -->
+    <h1>Заповінть анкету для прийому на роботу, щоб ми могли з вами зв'язатись</h1>
+    <form action="" autocomplete="off">
+        <input type="text" placeholder="Enter your name" name="username" size="30"><br>
+        <input type="text" placeholder="Enter your surname" name="usersurname"size="30"> <br>
+        <input type="email" placeholder="Enter your email" name="email"size="30"><br>
+        <input type="year" placeholder="Enter your year" name="year" size="30"><br>
+        <!-- <input type="phonenumber"><br> -->
+        Оберіть свою дату народження<br>
+        <select> 
+            <option value="1">Select year</option>
+            <option value="2">1998</option>
+            <option value="3">1999</option>
+            <option value="4">2000</option>
+            <option value="5">2001</option>
+            <option value="6">2002</option>
+            <option value="7">2003</option>
+            <option value="8">2004</option>
+        </select><br>
+        <select> 
+            <option value="1">Select month</option>
+            <option value="2">01</option>
+            <option value="3">02</option>
+            <option value="4">03</option>
+            <option value="5">04</option>
+            <option value="6">05</option>
+            <option value="7">06</option>
+            <option value="8">07</option>
+            <option value="9">08</option>
+            <option value="10">09</option>
+            <option value="11">10</option>
+            <option value="12">11</option>
+            <option value="13">12</option>
+        </select><br>
+        <select> 
+            <option value="1">Select day</option>
+            <option value="2">01</option>
+            <option value="3">02</option>
+            <option value="4">03</option>
+            <option value="5">04</option>
+            <option value="6">05</option>
+            <option value="7">06</option>
+            <option value="8">07</option>
+        </select><br>
+        <input type="file"><br>
+        <hr>
+        <h2>Який формат роботи вас більше всього цікавить?</h2><br>
+        <input type="radio" name="format" value="Я хочу працювати віддалено"> Я хочу працювати віддалено<br> 
+        <input type="radio" name="format" value="Я хочу працювати в офісі"> Я хочу працювати в офісі<br>
+        <input type="radio" name="format" value="Я хочу працювати комбіновано"> Я хочу працювати комбіновано<br>
+        <input type="radio" name="format" value="Я не хочу працювати, мені байдуже"> Я не хочу працювати, мені байдуже<br>
+
+        Ви даєте згоду на обробку ваших даних? 
+        <input type="checkbox"><br>
+        <button type="submit">Send</button>
+
+    </form>
+    
+    
+</body>
+</html>
