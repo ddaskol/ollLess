@@ -1,0 +1,12 @@
+p {
+    color: green;
+}
+#red-text {
+    color: red;
+}
+.blue-text {
+    color: blue;
+} 
+.fz30 {
+    font-size: 30px;
+}
