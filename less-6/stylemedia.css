@@ -1,0 +1,23 @@
+div {
+    background-color: blue;
+    color: lightcoral;
+    padding: 30px;
+    text-align: right;
+}
+@media(min-width:700px) {
+    div {
+        background-color: red;
+        color: rgb(185, 163, 163);
+        text-align: left;
+    }
+}
+@media(min-width: 1024px) {
+    div {
+        background-color: yellow;
+    }
+}
+@media(min-width:1200px) {
+    div {
+        background-color: black;
+    }
+}
