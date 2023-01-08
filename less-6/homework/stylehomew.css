@@ -1,10 +1,9 @@
 * {
     box-sizing: border-box;
 }
- /* .back-item {
-    width: auto;
-    margin: 30px;     
-} */
+body {
+    margin: 0;
+}
 .top-item {
     width: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -13,50 +12,53 @@
     margin: 20px;
     padding: 30px;
     border-radius: 20px;
-    position: hidden;
-    z-index: 1000;
+    position: hidden;  
 }
+
 .top-item > p {
     border-left: 5px solid rgb(242, 241, 241);
     padding: 10px;
 }
 .form-window {
-    width: 250px;
-    height: auto;
+    width: 400px;
+    height: 400px;
     background-color: bisque;
     color: red;
-    text-align: center;
+    float: left;
     padding: 20px;
-    border: 5px solid blue;
+    border: 5px solid rgb(255, 0, 25);
     left: 50%;
-    margin-left: -125px;
+    margin-left: -194px;
     top: 50%;
-    margin-top: -100px;
-    /* position: fixed; */
-    /* z-index: 10; */
-}
-.marg-bot {
-    margin-bottom: 10px;
-}
-.close-btn {
-    text-align: right;
-    cursor: pointer;
+    margin-top: -150px;
+    position: fixed;
+    z-index: 1000;
 }
 .form-window > h3 {
     margin-top: 0px;
 }
+.marg-btm {
+    margin-bottom: 25px;
+}
+
+.close-btn {
+    text-align: right;
+    cursor: pointer;
+}
+
 .overlay {
-    background-color: rgba(11, 11, 27, 0.674);
+    background-color: rgba(10, 10, 210, 0.674);
     top: 0;right: 0;bottom: 0;left: 0;
     position: fixed;
+    z-index: 100;
 }
-/* @media(min-width:768px) {
+@media(min-width:768px) {
     .overlay {
-        background-color: rgba(196, 18, 18);
+        background-color: rgba(221, 27, 27, 0.343);
     }
 }
 @media(min-width:1150px) {
     .overlay {
-        background-color: aliceblue;
+        background-color: rgba(11, 167, 244, 0.596);
     }
-} */
+}
