@@ -94,6 +94,9 @@ body {
     padding-left: 20px;
     font-size: 21px;
 }
+::placeholder {
+    color: #2c71b8;
+}
 .srch_icon_style {
     width: 30px;
     height: 30px;
