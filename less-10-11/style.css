@@ -148,14 +148,16 @@ body {
 .shop_cart:not(hover) {
     transition: .2s ease-out;
 }
-.sub_menu_list {
 
-}
+
 .nav li {
     position: relative;
 }
+.nav>li:hover .sub_menu_list {
+    display: block;
+}
 .sub_menu_list {
-    /* display: none; */
+    display: none; 
     width: 286px;
     height: 286px;
 
@@ -188,7 +190,8 @@ body {
 .sub_menu_link:not(hover) {
     transition: .2s ease-out;
 }
-.sub_menu_link:hover  .menu_list {
-    
-    background-color: #2c71b8
-}
+/* 
+    1.Як закріпити колір на батьківський елемент випадаючого списку
+    2.Як прописати transition для випадаючого списку.
+    3. правильність і чистота коду?
+ */
