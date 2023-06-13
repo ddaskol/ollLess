@@ -38,6 +38,15 @@ body {
     height: 81px;
     align-items: center;
 }
+@media  (max-width:1024px ){
+    .header_body {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+    }
+}
+    
+
 .header_logo {
 }
 .header_logo img{
@@ -54,6 +63,11 @@ ul.nav {
     width: 600px;
     
 }
+/* @media  (max-width: 610px){
+    .nav {
+        flex-wrap: wrap;
+    }
+} */
 .menu_link {
     height: 30px;
     display: block;
@@ -146,17 +160,31 @@ ul.nav {
 }
 /*======================================================*/
 .slider {
-    height: 500px;
+    /* height: 500px; */
     background-image: url(/modest-project/images/bgBlock1.png);
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
+
 .slider_row {
     display: flex;
     flex-direction: column;
 
     height: 500px;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px){
+    .slider_row {
+        height: 400px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .slider_row {
+        height: 300px;
+    }
+
 }
 .slider_body {
     color: #fff;
@@ -168,6 +196,19 @@ ul.nav {
 
     margin-bottom: 30px;
 }
+@media screen and (max-width: 768px){
+    .slider_title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .slider_title {
+        font-size: 20px;
+    }
+
+}
 .slider_text {
     color: #ccd0d7;
     font-size: 16px;
@@ -175,20 +216,41 @@ ul.nav {
 
     margin-bottom: 40px;
 }
-.slider__buttons {}
+@media screen and (max-width: 768px){
+    .slider_text {
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .slider_text {
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
+}
+.slider__buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
 .slider__buttons_btn {
-    width: 120px;
-    height: 40px;
+    min-width: 120px;
+    min-height: 40px;
 
     border: none;
     border-radius: 3px;
     outline: 3px solid #fff;
-
     background-color: rgba(255, 255, 255, 0);
 
     cursor: pointer;
-
     margin-right: 15px;
+}
+@media screen and (max-width: 425px) {
+    .slider__buttons_btn {
+        flex: 1 1 100%;
+        margin: 0 0 15px 0;
+    }
+    
 }
 .slider__buttons_btn:hover {
     outline: 3px solid #23b7a4;
@@ -220,7 +282,7 @@ ul.nav {
     display: flex;
 }
 .modest_text {
-    margin-right: 15px;
+    margin: 0 15px 35px 0;
 }
 .modest_text p {
     color: #8d8f92;
@@ -272,6 +334,36 @@ ul.nav {
 
     line-height: 1.3;
 }
+@media screen and (max-width: 1024px) {
+    .modest_text {
+        flex: 0 0 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .modest_body {
+        display: flex;
+        flex-direction: column;
+    }
+    .title__content_blocks {
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    .modest_text p {
+        margin-bottom: 30px;
+    }
+    .modest__list {
+        margin: 0 15px 0 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .title__content_blocks {
+        font-size: 26px;
+        margin: 25px 0;
+    }
+    .modest_icon {
+        text-align: center;
+    }
+}
 /*======================================================*/
 .team {
     margin-bottom: 60px;
@@ -283,11 +375,12 @@ ul.nav {
 }
 .team_body {
     display: flex;
-    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 .team_card {
     background-color: #e1e6ea;
-    margin-right: 30px;
+    margin: 0 24px 24px 0;
 
     cursor: pointer;
 }
@@ -321,6 +414,11 @@ ul.nav {
 .team_card:hover h4 {
     color: white
 }
+@media screen and (max-width: 1180px) {
+    .team_body {
+        overflow-x: scroll;
+    }
+}
 /*======================================================*/
 .work {
     background-color: #3a454d;
@@ -330,7 +428,7 @@ ul.nav {
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
+    /* justify-content: center; ????? */
 }
 .work_title {
     color: #ffffff;
@@ -350,7 +448,7 @@ ul.nav {
 
     position: relative; 
 
-    margin-bottom: 30px;
+    margin: 0 20px 20px 0;
 }
 .cardboard_img {
     width: 360px;
@@ -364,11 +462,6 @@ ul.nav {
     position: absolute;
     top: 94px;
     left: 45%;
-    /* left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto; */
     cursor: pointer;
 
     display: none;
@@ -431,6 +524,12 @@ ul.nav {
 }
 .work_btn:not(hover), .work_btn:not(hover) .work_btn_text {
     transition: .3s;
+}
+@media screen and (max-width: 1180px) {
+    .work_body {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
 }
 /*======================================================*/
 .do {
