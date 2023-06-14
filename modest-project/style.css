@@ -57,7 +57,7 @@ body {
 
 }
 ul.nav {
-    display: flex;
+    /* display: flex; */
 
     justify-content: space-around;
     width: 600px;
@@ -525,12 +525,12 @@ ul.nav {
 .work_btn:not(hover), .work_btn:not(hover) .work_btn_text {
     transition: .3s;
 }
-@media screen and (max-width: 1180px) {
+/* @media screen and (max-width: 1180px) {
     .work_body {
         flex-wrap: nowrap;
         overflow-x: scroll;
     }
-}
+ }   як адптивити кртинки краще? */
 /*======================================================*/
 .do {
     margin-bottom: 60px;
@@ -770,9 +770,73 @@ ul.nav {
     width: 38px;
     transition: .3s linear;
 }
+/*======================================================*/
+/*=========================menu Hamburger=============================*/
 
-@media screen (max-width) {
-    
+@media screen and (max-width: 767px){
+    .nav_mobile_menu {
+        width: 15px;
+        height: 15px;
+        position: relative;
+    }
+    .nav_mobile_menu span {
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: .25s ease-in-out;
+    }
+    .nav_mobile_menu span:nth-child(1) {
+        top: 3px;
+    }
+    .nav_mobile_menu span:nth-child(2) {
+        top: 7px;
+    }
+    .nav_mobile_menu span:nth-child(3) {
+        bottom: 3px;
+    }
+    .hidden_menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 280px;
+        max-width: 280px;
+        transition: all 500ms ease-in-out;
+        transform: translateX(50%);
+    }
+    .header_row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+    }
+    /* //active_menu */
+    .nav_mobile_menu.active_menu span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .nav_mobile_menu.active_menu span:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    .nav_mobile_menu.active_menu span:nth-child(3) {
+        transform: scale(0);
+    }
+    .navigation.active_menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        top: 42px;
+
+        background-color: #1d2126;
+        
+    }
 }
 
 
