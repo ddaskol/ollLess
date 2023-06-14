@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    text-align: center;
+    line-height: 100px;
+    background-color: purple;
+    color: white;
+}
+section {
+    background-color: grey;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+article {
+    background-color: cadetblue;
+    color: green;
+
+    margin: 10px;
+    padding: 10px;
+    
+}
