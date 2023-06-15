@@ -24,3 +24,13 @@ btnForm.addEventListener("click", function () {
         activatedForm.classList.remove("activeForm");
     }
 })
+
+btnForm = document.querySelector("#switchText");
+
+btnForm.addEventListener("click", function () {
+    if (btnForm.classList.contains("activeForm")) {
+        document.getElementById("switchText").innerHTML = "close form";
+    } else {
+        document.getElementById("switchText").innerHTML = "open form";
+    }
+})
