@@ -42,22 +42,19 @@ body {
     .header_body {
         flex-direction: column;
         justify-content: space-around;
-        height: 150px;
+        height: 100px;
     }
 }
     
 
-.header_logo {
-}
+.header_logo {}
 .header_logo img{
     width: 150px;
     height: 35px;
 }
-.header_menu {
-
-}
+.header_menu {}
 ul.nav {
-    /* display: flex; */
+    display: flex;
 
     justify-content: space-around;
     width: 600px;
@@ -653,15 +650,19 @@ ul.nav {
     margin-bottom: 0;
 }
 .touch_form_section {
-    background-color: #fff;
-    width: 555px;
-    height: 400px;
-    padding: 30px;
     margin-left: 15px;
 
     position: relative;
     top: -160px;
-    left: 0;
+    left: 0; 
+}
+.alfa {
+    background-color: #fff;
+    width: 555px;
+    height: 400px;
+    padding: 30px;
+
+    visibility: hidden;
 }
 .touch_form_contacts_body {
     display: flex;
@@ -726,6 +727,20 @@ ul.nav {
 
     padding: 0  15px;
 }
+.touch_onOff_btn {
+    background-color: #23b7a4;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    line-height: 44px;
+
+    color: #fff;
+    cursor: pointer;
+}
+.activeForm {
+    visibility: visible;
+}
+
 /*======================================================*/
 .footer {
     width: 100%;
@@ -774,6 +789,9 @@ ul.nav {
 /*=========================menu Hamburger=============================*/
 
 @media screen and (max-width: 767px){
+    ul.nav {
+        flex-direction: column;
+    }
     .nav_mobile_menu {
         width: 15px;
         height: 15px;
@@ -807,7 +825,7 @@ ul.nav {
         bottom: 0;
         width: 280px;
         max-width: 280px;
-        transition: all 500ms ease-in-out;
+        transition: all 250ms ease-in-out;
         transform: translateX(50%);
     }
     .header_row {
@@ -833,6 +851,7 @@ ul.nav {
         visibility: visible;
         transform: translateX(0);
         top: 42px;
+        min-width: 100%;
 
         background-color: #1d2126;
         

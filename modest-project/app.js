@@ -11,3 +11,16 @@ mobileMenu.addEventListener("click", function () {
         mainMenu.classList.remove("active_menu");
     }
 })
+
+
+let btnForm = document.querySelector(".touch_onOff_btn");
+let activatedForm = document.querySelector(".alfa");
+
+btnForm.addEventListener("click", function () {
+    btnForm.classList.toggle("activeForm");
+    if (btnForm.classList.contains("activeForm")) {
+        activatedForm.classList.add("activeForm");
+    } else {
+        activatedForm.classList.remove("activeForm");
+    }
+})
