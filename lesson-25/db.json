@@ -1,0 +1,37 @@
+[
+    {
+        "title": "News 1",
+        "src": "/lesson-25/images/bbcUkr.png",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at officia rerum, repellat aspernatur eius modi beatae voluptatem maiores illo animi hic, deserunt dolorem tempore pariatur doloribus ullamveniam facere?",
+        "name": "Dima",
+        "parent": ".articles"
+    },
+    {
+        "title": "News 11",
+        "src": "/lesson-25/images/bbcUkr.png",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at officia rerum, repellat aspernatur eius modi beatae voluptatem maiores illo animi hic, deserunt dolorem tempore pariatur doloribus ullamveniam facere?",
+        "name": "Dima",
+        "parent": ".articles"
+    },
+    {
+        "title": "news 2",
+        "src": "/lesson-25/images/bbcUkr.png",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at officia rerum, repellat aspernatur eius modi beatae voluptatem maiores illo animi hic, deserunt dolorem tempore pariatur doloribus ullamveniam facere?",
+        "name": "Dima",
+        "parent": ".articles"
+    },
+    {
+        "title": "news 3",
+        "src": "/lesson-25/images/bbcUkr.png",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at officia rerum, repellat aspernatur eius modi beatae voluptatem maiores illo animi hic, deserunt dolorem tempore pariatur doloribus ullamveniam facere?",
+        "name": "Dima",
+        "parent": ".articles"
+    },
+    {
+        "title": "news 4",
+        "src": "/lesson-25/images/bbcUkr.png",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at officia rerum, repellat aspernatur eius modi beatae voluptatem maiores illo animi hic, deserunt dolorem tempore pariatur doloribus ullamveniam facere?",
+        "name": "Dima",
+        "parent": ".articles"
+    }
+]

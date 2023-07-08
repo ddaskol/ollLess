@@ -34,3 +34,10 @@ btnForm.addEventListener("click", function () {
         document.getElementById("switchText").innerHTML = "open form";
     }
 })
+
+// let isOpen = btnForm.classList.contains("activeForm");
+// const text = isOpen?"close":"open";
+
+// btnForm.addEventListener("click", function () {
+    
+// })

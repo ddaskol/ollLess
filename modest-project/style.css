@@ -440,17 +440,21 @@ ul.nav {
     flex: 0 1 30%;
 } */
 .work_cardboard {
-    width: 360px;
-    height: 270px;
+        width: 360px;
+        height: 270px;
 
     position: relative; 
+    margin: 0 0 20px 0;
+    /* padding: 0 0 58% 0; */
+    /* overflow: hidden; */
 
-    margin: 0 20px 20px 0;
+    
 }
 .cardboard_img {
-    width: 360px;
-    height: 270px;
-
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -484,13 +488,17 @@ ul.nav {
     padding: 20px 20px;
 }
 
- /* не розібрався як прописати transition на .cardboard_text, .cardboard_imgPlus */
+ /* Q: РЅРµ СЂРѕР·С–Р±СЂР°РІСЃСЏ СЏРє РїСЂРѕРїРёСЃР°С‚Рё transition РЅР° .cardboard_text, .cardboard_imgPlus */
 .work_cardboard:hover .cardboard_img{
     opacity: 0.5;
     transition: 1s;
 }
 .work_cardboard:hover .cardboard_text, .work_cardboard:hover .cardboard_imgPlus {
     display: flex;
+}
+.work_btn_container {
+    display: flex;
+    justify-content: center;
 }
 .work_btn {
     display: flex;
@@ -527,7 +535,7 @@ ul.nav {
         flex-wrap: nowrap;
         overflow-x: scroll;
     }
- }   як адптивити кртинки краще? */
+ }   Q+: СЏРє Р°РґРїС‚РёРІРёС‚Рё РєСЂС‚РёРЅРєРё РєСЂР°С‰Рµ? */
 /*======================================================*/
 .do {
     margin-bottom: 60px;
@@ -574,7 +582,10 @@ ul.nav {
     background-color: #3a454d;
     padding-bottom: 60px;
 }
- .features_row { /*чому без роу блока не працює margin для title  */
+/* Q+: С‡РѕРјСѓ Р±РµР· СЂРѕСѓ Р±Р»РѕРєР° РЅРµ РїСЂР°С†СЋС” margin РґР»СЏ title  */
+/* A: https://stackoverflow.com/questions/19718634/how-to-disable-margin-collapsing  */
+
+.features_row {
     display: flex;
     flex-direction: column;
 }
@@ -766,24 +777,22 @@ ul.nav {
     display: flex;
     justify-content: flex-end;
 }
-.icon_body {
-}
 
 .icon_body a {
-    
-    height: 40px;
-    width: 40px;
+    height: 41px;
+    width: 41px;
 }
 .icon_body img {
- 
-    height: 39px;
-    width: 39px;
+    height: 40px;
+    width: 40px;
+    padding: 1px;
 }
 .icon_body img:hover {
-    border: 1px solid rgb(1, 1, 1); /*ed; чомусь не можу прописати output щоб іконки не дьоргались */
-    height: 38px;
-    width: 38px;
-    transition: .3s linear;
+    border: 1px solid rgb(1, 1, 1); /*ed; Q+: С‡РѕРјСѓСЃСЊ РЅРµ РјРѕР¶Сѓ РїСЂРѕРїРёСЃР°С‚Рё output С‰РѕР± С–РєРѕРЅРєРё РЅРµ РґСЊРѕСЂРіР°Р»РёСЃСЊ */
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    /* transition: .3s linear; */
 }
 /*======================================================*/
 /*=========================menu Hamburger=============================*/
@@ -858,6 +867,25 @@ ul.nav {
     }
 }
 
+/* ========= testtestetse */
 
-
-
+.test_body {
+    display: flex;
+}
+.body {
+    margin: 0 15px 0 15px;
+} 
+.img_father {
+    margin: 0 0 20px 0;
+    padding: 0 0 58% 0;
+    overflow: hidden;
+    position: relative;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left0
+}

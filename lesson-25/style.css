@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+body, h1,h2 {
+    margin: 0;
+}
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 49%;
+    padding: 0 15px;
+}
+.article_img {
+    text-align: center;
+}
+.article_img img{
+    height: 300px;
+    max-width: 100%;
+}
+.article_title {
+    margin: 15px 0;
+    text-align: center;
+}
+.article_name, .article_description{
+    margin: 15px 0;
+}
