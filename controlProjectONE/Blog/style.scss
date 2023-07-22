@@ -1,0 +1,237 @@
+.header
+{
+    .header_body
+    {
+
+        .header_menu
+        {
+            ul.nav
+            {
+                li
+                {
+                    .menu_link
+                    {
+                        color: #363636;
+                        opacity: 0.8;
+
+                        &:hover
+                        {
+                            color: #174AFF;
+                            transition: .2s linear;
+                        }
+
+                        &:not(hover)
+                        {
+                            transition: .2s linear;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .header_btn
+        {
+            .btn_demo
+            {
+                border: 1.5px solid #174AFF;
+                color: #174AFF;
+
+                &:hover
+                {
+                    background-color: #174AFF;
+                    transition: .2s linear;
+                    color: #fff;
+                }
+
+                &:not(hover)
+                {
+                    transition: .2s linear;
+                }
+            }
+        }
+    }
+}
+
+//==========================================================================================//
+
+.weAsked
+{
+    margin-bottom: 150px;
+
+    .weAskedTitleBl
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .weAsked_form
+        {
+
+
+            margin-bottom: 120px;
+
+            .weAsked_form_inp
+            {
+                width: 550px;
+                height: 58px;
+
+                border: 1px solid #979797;
+            }
+
+            .weAsked_form_btn
+            {
+                background-color: #174AFF;
+                color: #fff;
+
+                &:hover
+                {
+                    background: #0023a3;
+                    transition: 0.2s linear;
+                }
+
+                &:not(hover)
+                {
+                    transition: .2s;
+                }
+            }
+        }
+    }
+
+    .weAsked_body
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .weAsked_body_title
+        {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            margin-bottom: 50px;
+        }
+
+        .weAsked_newsBar,
+        .weAsked_rBar,
+        {
+
+            .newsBar_item_img
+            {
+                width: 675px;
+                height: 290px;
+
+                overflow: hidden;
+                position: relative;
+
+                margin-bottom: 25px;
+
+                img
+                {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    border-radius: 8px;
+                }
+            }
+
+            .newsBar_item_text
+            {
+                padding: 0 5px;
+                margin-bottom: 50px;
+
+                .newsBar_item_supt
+                {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    h4
+                    {
+                        font-size: 14px;
+                        font-weight: 400;
+
+                        padding-right: 30px;
+                    }
+
+                    p
+                    {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #8A8888;
+                    }
+
+                }
+
+                h3
+                {
+                    font-size: 18px;
+                    font-weight: 400;
+
+                    margin-bottom: 15px;
+                }
+
+                p
+                {
+                    font-weight: 400;
+                    line-height: 25px;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .weAsked_rBar
+        {
+            margin: 0 40px 0 60px;
+
+            .rBar_filter
+            {
+                margin-bottom: 50px;
+
+                .rBar_filter_btns
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    button
+                    {
+                        border-radius: 5px;
+                        border: 1px solid #979797;
+                        background: rgba(255, 255, 255, 0);
+                        padding: 15px 25px;
+
+                        margin: 9px 9px 9px 9px;
+
+                        font-size: 14px;
+                        color: #363636;
+                        opacity: 0.8;
+
+                        &:hover
+                        {
+                            background-color: #174AFF;
+                            color: #fff;
+                            transition: .2s linear;
+                            cursor: pointer;
+                        }
+
+                        &:not(hover)
+                        {
+                            transition: .2s linear;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .hr
+        {
+            margin-bottom: 50px;
+        }
+    }
+}

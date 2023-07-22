@@ -1,0 +1,148 @@
+.header .header_body .header_menu ul.nav li .menu_link {
+  color: #363636;
+  opacity: 0.8;
+}
+.header .header_body .header_menu ul.nav li .menu_link:hover {
+  color: #174AFF;
+  transition: 0.2s linear;
+}
+.header .header_body .header_menu ul.nav li .menu_link:not(hover) {
+  transition: 0.2s linear;
+}
+.header .header_body .header_btn .btn_demo {
+  border: 1.5px solid #174AFF;
+  color: #174AFF;
+}
+.header .header_body .header_btn .btn_demo:hover {
+  background-color: #174AFF;
+  transition: 0.2s linear;
+  color: #fff;
+}
+.header .header_body .header_btn .btn_demo:not(hover) {
+  transition: 0.2s linear;
+}
+
+.weAsked {
+  margin-bottom: 150px;
+}
+.weAsked .weAskedTitleBl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weAsked .weAskedTitleBl .weAsked_form {
+  margin-bottom: 120px;
+}
+.weAsked .weAskedTitleBl .weAsked_form .weAsked_form_inp {
+  width: 550px;
+  height: 58px;
+  border: 1px solid #979797;
+}
+.weAsked .weAskedTitleBl .weAsked_form .weAsked_form_btn {
+  background-color: #174AFF;
+  color: #fff;
+}
+.weAsked .weAskedTitleBl .weAsked_form .weAsked_form_btn:hover {
+  background: #0023a3;
+  transition: 0.2s linear;
+}
+.weAsked .weAskedTitleBl .weAsked_form .weAsked_form_btn:not(hover) {
+  transition: 0.2s;
+}
+.weAsked .weAsked_body {
+  display: flex;
+  justify-content: space-between;
+}
+.weAsked .weAsked_body .weAsked_body_title {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_img,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_img {
+  width: 675px;
+  height: 290px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_img img,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_text,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_text {
+  padding: 0 5px;
+  margin-bottom: 50px;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_text .newsBar_item_supt,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_text .newsBar_item_supt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_text .newsBar_item_supt h4,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_text .newsBar_item_supt h4 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 30px;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_text .newsBar_item_supt p,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_text .newsBar_item_supt p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8A8888;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_text h3,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.weAsked .weAsked_body .weAsked_newsBar .newsBar_item_text p,
+.weAsked .weAsked_body .weAsked_rBar .newsBar_item_text p {
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.6;
+}
+.weAsked .weAsked_body .weAsked_rBar {
+  margin: 0 40px 0 60px;
+}
+.weAsked .weAsked_body .weAsked_rBar .rBar_filter {
+  margin-bottom: 50px;
+}
+.weAsked .weAsked_body .weAsked_rBar .rBar_filter .rBar_filter_btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.weAsked .weAsked_body .weAsked_rBar .rBar_filter .rBar_filter_btns button {
+  border-radius: 5px;
+  border: 1px solid #979797;
+  background: rgba(255, 255, 255, 0);
+  padding: 15px 25px;
+  margin: 9px 9px 9px 9px;
+  font-size: 14px;
+  color: #363636;
+  opacity: 0.8;
+}
+.weAsked .weAsked_body .weAsked_rBar .rBar_filter .rBar_filter_btns button:hover {
+  background-color: #174AFF;
+  color: #fff;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.weAsked .weAsked_body .weAsked_rBar .rBar_filter .rBar_filter_btns button:not(hover) {
+  transition: 0.2s linear;
+}
+.weAsked .weAsked_body .hr {
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
