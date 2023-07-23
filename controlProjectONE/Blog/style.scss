@@ -68,34 +68,16 @@
 
         .weAsked_form
         {
-
-
             margin-bottom: 120px;
 
             .weAsked_form_inp
             {
                 width: 550px;
                 height: 58px;
-
-                border: 1px solid #979797;
             }
 
             .weAsked_form_btn
-            {
-                background-color: #174AFF;
-                color: #fff;
-
-                &:hover
-                {
-                    background: #0023a3;
-                    transition: 0.2s linear;
-                }
-
-                &:not(hover)
-                {
-                    transition: .2s;
-                }
-            }
+            {}
         }
     }
 

@@ -54,32 +54,212 @@
 }
 
 //==========================================================================================//
-.wrapper
-{
+// .wrapper
+// {
 
-    .simplify
+//     .simplify
+//     {
+//         .simplify_title
+//         {
+//             h2
+//             {
+//                 color: red;
+//             }
+
+//             font-size: 32px;
+//             font-weight: 600;
+//             text-align: center;
+
+//             margin-bottom: 20px;
+//         }
+
+//         .simplify_subtitle
+//         {
+//             font-size: 19px;
+//             font-weight: 400;
+//             text-align: center;
+
+//             margin-bottom: 150px;
+//         }
+//     }
+// }
+//==========================================================================================//
+.contactUs
+{
+    text-align: center;
+    margin-bottom: 150px;
+
+    .contactUs_title
     {
-        .simplify_title
+        font-size: 40px;
+    }
+
+    .contactUs_sub
+    {
+        font-size: 20px;
+        font-weight: 400;
+
+        margin-bottom: 100px;
+    }
+
+    .contactUs_form_bl
+    {
+        .contactUs_form
         {
-            h2
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .form_input
             {
-                color: red;
+                max-width: 340px;
+                height: 60px;
+                flex: 0 1 100%;
+
+                border: 1px solid #979797;
+                opacity: 0.6;
+                border-radius: 8px;
+                padding: 20px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+
+                font-size: 16px;
+                font-weight: 400;
+                color: #363636;
+
+                // &:nth-child(0)
+                // {
+                //     margin-right: 0;
+                // }
+
+                &::placeholder
+                {
+                    opacity: 0.7;
+                }
+
+                &:hover,
+                &:not(hover)
+                {
+                    outline: none;
+                    font-size: 20px;
+                }
             }
 
-            font-size: 32px;
-            font-weight: 600;
-            text-align: center;
+            .form_input_subj
+            {
+                max-width: 685px;
+                flex: 0 1 100%;
+            }
 
-            margin-bottom: 20px;
-        }
+            .form_input_txtArea
+            {
+                max-width: 685px;
+                height: 180px;
+                flex: 0 1 100%
+            }
 
-        .simplify_subtitle
-        {
-            font-size: 19px;
-            font-weight: 400;
-            text-align: center;
+            .contactUs_form_btn
+            {
+                display: flex;
+                justify-content: center;
+                flex: 0 1 100%;
 
-            margin-bottom: 150px;
+                .form_input_Button
+                {
+                    width: 190px;
+                    height: 53px;
+                    border: none;
+                    border-radius: 5px;
+                    background: #3670FF;
+
+                    color: #fff;
+                    font-size: 16px;
+
+                    margin-bottom: 100px;
+
+                    &:hover
+                    {
+                        background: #174AFF;
+                        transition: .2s linear;
+                    }
+
+                    &:not(hover)
+                    {
+                        transition: .2s linear;
+                    }
+                }
+            }
         }
     }
+
+    .contactUs_contact
+    {
+        display: flex;
+        justify-content: center;
+
+        .contact_item
+        {
+            a
+            {
+                font-size: 26px;
+                font-weight: 500;
+                color: #3670FF;
+            }
+        }
+
+        span
+        {
+            font-size: 26px;
+            font-weight: 600;
+            margin: 0 25px;
+        }
+    }
+
+
+
+    .container
+    {
+        position: relative;
+    }
+
+    .contactUs_img1,
+    .contactUs_img2,
+    .contactUs_img3,
+    .contactUs_img4,
+    {
+        img
+        {
+            border-radius: 50%;
+            filter: drop-shadow(-10px 21px 13px #D8D8D8);
+        }
+    }
+
+    .contactUs_img1
+    {
+        position: absolute;
+        top: 285px;
+        left: -50px;
+    }
+
+    .contactUs_img2
+    {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+    }
+
+    .contactUs_img3
+    {
+        position: absolute;
+        top: 300px;
+        right: -35px;
+    }
+
+    .contactUs_img4
+    {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
 }

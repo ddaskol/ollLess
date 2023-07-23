@@ -189,6 +189,31 @@
     }
 }
 
+.greyBlueForm_style
+{
+    .greyBlueForm_inp
+    {
+        border: 1px solid #979797;
+    }
+
+    input.greyBlueForm_Btn
+    {
+        background-color: #174AFF;
+        color: #fff;
+
+        &:hover
+        {
+            background: #0023a3;
+            transition: 0.2s linear;
+        }
+
+        &:not(hover)
+        {
+            transition: .2s;
+        }
+    }
+}
+
 //==========================================================================================//
 
 .blocks_btns
@@ -385,12 +410,22 @@
                         margin-bottom: 0;
                     }
 
-                    p
+                    a
                     {
+
                         letter-spacing: 0.5px;
                         font-weight: 400;
                         opacity: 0.8;
+
+                        color: #fff;
+
+                        &:hover
+                        {
+                            opacity: 1;
+                            transition: .2s linear;
+                        }
                     }
+
                 }
 
                 .topFooter_icon
