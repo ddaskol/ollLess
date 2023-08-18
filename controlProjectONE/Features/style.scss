@@ -2,19 +2,18 @@
 {
     position: relative;
 
-    .header_backColor
-    {
+    // .header_backColor
+    // {
 
-        background: radial-gradient(circle at 120% 90%, #6100b1, #7200cf, #8200ee, #920dff, #9f2bff, #ad49ff, #bb68ff, #c886ff, #d6a4ff, #e4c2ff, #f1e1ff, #ffffff);
+    //     background: radial-gradient(circle at 50% 60%, #5d00a0, #5a00a1, #5500a5, #5100a8, #4800a8, #4000b1, #3c00b4, #3700b6);
+    //     position: absolute;
+    //     height: 200px;
+    //     width: 200px;
+    //     top: 0;
+    //     left: 0;
 
-        position: absolute;
-        height: 100%;
-        width: 10%;
-        top: 0;
-        left: 0;
-
-        border-radius: 50%;
-    }
+    //     border-radius: 50%;
+    // }
 
     .header_body
     {
@@ -100,8 +99,8 @@
 
             .screen_back
             {
-                width: 650px;
-                height: 380px;
+                width: auto;
+                height: auto;
 
                 display: flex;
                 flex-direction: column;
@@ -143,5 +142,32 @@
             {}
 
         }
+    }
+
+    @media screen and (max-width: 1024px)
+    {
+        .simplify_body
+        {
+            .simplify_lead
+            {
+                position: relative;
+                margin-bottom: 100px;
+
+                .screen_back
+                {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+            .simplify_card_template
+            {
+                margin-bottom: 100px;
+            }
+        }
+
+
+
     }
 }

@@ -26,16 +26,7 @@
   margin-bottom: 150px;
 }
 .weAsked .weAskedTitleBl {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.weAsked .weAskedTitleBl .weAsked_form {
-  margin-bottom: 120px;
-}
-.weAsked .weAskedTitleBl .weAsked_form .weAsked_form_inp {
-  width: 550px;
-  height: 58px;
+  text-align: center;
 }
 .weAsked .weAsked_body {
   display: flex;
@@ -131,6 +122,32 @@
 }
 .weAsked .weAsked_body .hr {
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1077px) {
+  .weAsked .weAsked_body .weAsked_rBar {
+    margin: 0 0 0 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .weAsked {
+    margin-bottom: 100px;
+  }
+  .weAsked .weAsked_body {
+    flex-direction: column;
+  }
+  .weAsked .weAsked_body .weAsked_newsBar .newsBar_item {
+    margin-bottom: 50px;
+  }
+  .weAsked .weAsked_body .weAsked_newsBar .newsBar_item .newsBar_item_img {
+    width: 100%;
+  }
+  .weAsked .weAsked_body .weAsked_rBar {
+    margin: 0;
+  }
+  .weAsked .weAsked_body .weAsked_rBar .rBar_filter .weAsked_body_title,
+  .weAsked .weAsked_body .weAsked_rBar .rBar_news .weAsked_body_title {
+    margin-bottom: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
